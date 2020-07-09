@@ -1,13 +1,16 @@
 package com.mycompany.app;
 
+
 /**
  * Hello world!
  *
  */
-public class App 
+public class App
 {
-    public static void main( String[] args )
+
+    public String getTexto()
     {
-        System.out.println( "Hello World!" );
+
+	return "Hola";
     }
 }

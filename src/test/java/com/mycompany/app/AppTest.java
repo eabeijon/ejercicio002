@@ -1,20 +1,35 @@
 package com.mycompany.app;
 
-import static org.junit.Assert.assertTrue;
 
+import static org.junit.Assert.assertEquals;
+import org.junit.Before;
 import org.junit.Test;
 
-/**
- * Unit test for simple App.
- */
-public class AppTest 
+
+public class AppTest
 {
-    /**
-     * Rigorous Test :-)
-     */
-    @Test
-    public void shouldAnswerWithTrue()
+
+    private App cut;
+
+    @Before
+    public void setUp() throws Exception
     {
-        assertTrue( true );
+
+	cut = new App();
     }
+
+
+    @Test
+    public void testGetTexto()
+    {
+	// Preparar
+
+	// Ejecutar
+	String res = cut.getTexto();
+
+	// Verificar
+	assertEquals("El mensaje no era la bienvenida esperada", "Hola", res);
+
+    }
+
 }
